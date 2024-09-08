@@ -1,0 +1,22 @@
+CRITICAL - 2024-09-07 22:08:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: guardar_cliente]
+in SYSTEMPATH\BaseModel.php on line 1833.
+ 1 SYSTEMPATH\BaseModel.php(1833): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(806): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\ControllerClientes.php(46): CodeIgniter\Model->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerClientes->guardarCliente()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerClientes))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-07 23:53:18 --> Error: Call to undefined method App\Controllers\ControllerClientes::cargarNiveles()
+[Method: GET, Route: eliminar_cliente/7]
+in APPPATH\Controllers\ControllerClientes.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerClientes->eliminarCliente('7')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerClientes))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
